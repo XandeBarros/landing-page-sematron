@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&family=Roboto:wght@400;700;900&display=swap');
+
+:root {
+  --laranja: #E5A23D;
+  --chocolate: #977549;
+  --creme: #FFECCC;
+  --cards: #D5D1AA;
+  --verde: #005248;
+  --letra-secondario: #333;
+  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+
+  padding: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  background: var(--creme);
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 6rem;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  width: 6rem;
+}
+
+header nav {
+  position: relative;
+  display: flex;
+  color: var(--letra-secondario);
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+header nav a {
+  margin-left: 3rem;
+  transition: .5s;
+}
+
+header nav a:hover {
+  transform: translateY(-.5rem);
+}
+
+.content {
+  position: 100%;
+  width: 100%;
+  height: calc(100vh - 6rem);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content .text__box {
+  position: relative;
+  width: 37.5rem;
+}
+
+.content .text__box h1 {
+  color: var(--letra-secondario);
+  font-family: 'Roboto';
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 1em;
+
+  margin-bottom: 1.5rem;
+}
+
+.content .text__box h1 span {
+  color: var(--laranja);
+  font-weight: 900;
+  font-size: 1.2em;
+}
+
+.content .text__box p {
+  font-family: 'Poppins';
+  font-size: 1.25rem;
+  color: var(--letra-secondario);
+
+  margin-bottom: 1.5rem;
+}
+
+.btn__cta {
+  display: inline-block;
+  margin: 1.25rem 0;
+  padding: .5rem 1.25rem;
+  background: var(--laranja);
+  color: var(--letra-secondario);
+  border-radius: 2.5rem;
+
+  font-family: 'Poppins';
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  transition: .5s;
+}
+
+.btn__cta:hover {
+  transform: translateY(-.5rem);
+}
+
+.content .img__box {
+  position: relative;
+  width: 37.5rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3rem;
+}
+
+.content .img__box img {
+  max-width: 28rem;
+  transition: .5s;
+}
+
+.content .img__box img:hover {
+  transform: translateY(-1rem);
+}
+
+.redes-sociais {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  width: 6rem;
+}
+
+.redes-sociais li {
+  margin: .5rem 0;
+}
+
+.redes-sociais li a {
+  display: inline-block;
+}
+
+.redes-sociais li a img {
+  width: 2rem;
+  transition: .5s;
+}
+
+.redes-sociais li a img:hover {
+  transform: translateY(-0.5rem);
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: var(--chocolate);
+
+  clip-path: circle(37.5rem at right 50rem);
+}
+
+.circle2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  
+  background: var(--chocolate);
+
+  clip-path: circle(28rem at left 100rem);
+}
+
+.events {
+  position: relative;
+  margin-bottom: 3rem;
+
+  width: 100%;
+  min-height: 50rem;
+  display: grid;
+  grid-template-areas: 
+  "palestras dde gamenight"
+  "minicursos sorteios";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+}
+
+.events div {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--cards);
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: .5s;
+}
+
+.events div:hover {
+  transform: translateY(-1rem);
+}
+
+.events div h2 {
+  font-size: 2.5rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: var(--letra-secondario);
+
+  margin-bottom: 1rem;
+}
+
+.events div img {
+  margin-bottom: 1rem;
+}
+
+.events div p {
+  font-family: 'Poppins';
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--letra-secondario);
+}
+
+.events div .palestras {
+  grid-area: "palestras";
+}
+
+.events div .dde {
+  grid-area: "dde";
+
+}
+.events div .gamenight {
+  grid-area: "gamenight";
+
+}
+
+.events div .minicursos {
+  grid-area: "minicursos";
+
+}
+
+.events div .sorteios {
+  grid-area: "sorteios";
+}
+
+.events div img {
+  width: 10rem;
+}
+
+footer {
+  position: relative;
+  display: inline-block;
+  
+
+  background: var(--creme);
+}
+
+footer h3 {
+  color: var(--letra-secondario);
+  font-family: 'Roboto';
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 1em;
+}
