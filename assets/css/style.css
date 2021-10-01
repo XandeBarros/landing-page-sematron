@@ -68,7 +68,7 @@ header nav a:hover {
 }
 
 .content {
-  position: 100%;
+  position: relative;
   width: 100%;
   height: calc(100vh - 6rem);
 
@@ -179,7 +179,7 @@ header nav a:hover {
   
   background: var(--chocolate);
 
-  clip-path: circle(37.5rem at right 50rem);
+  clip-path: circle(35vw at right 46.67vw);
 }
 
 .circle2 {
@@ -191,7 +191,7 @@ header nav a:hover {
   
   background: var(--chocolate);
 
-  clip-path: circle(28rem at left 100rem);
+  clip-path: circle(21.14vw at left 93.34vw);
 }
 
 .events {
@@ -209,22 +209,26 @@ header nav a:hover {
   gap: 3rem;
 }
 
-.events div {
+.events .events__divs {
   width: 25rem;
+  height: 32rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  
   background: var(--cards);
   padding: 2rem;
   border-radius: 1rem;
   transition: .5s;
 }
 
-.events div:hover {
+.events .events__divs:hover {
   transform: translateY(-1rem);
 }
 
-.events div h2 {
+.events .events__divs h2 {
   font-size: 2.5rem;
   font-family: 'Roboto';
   font-weight: bold;
@@ -233,40 +237,40 @@ header nav a:hover {
   margin-bottom: 1rem;
 }
 
-.events div img {
+.events .events__divs img {
   margin-bottom: 1rem;
 }
 
-.events div p {
+.events .events__divs p {
   font-family: 'Poppins';
   font-size: 1.25rem;
   font-weight: 500;
   color: var(--letra-secondario);
 }
 
-.events div .palestras {
+.events .events__divs .palestras {
   grid-area: "palestras";
 }
 
-.events div .dde {
+.events .events__divs .dde {
   grid-area: "dde";
 
 }
-.events div .gamenight {
+.events .events__divs .gamenight {
   grid-area: "gamenight";
 
 }
 
-.events div .minicursos {
+.events .events__divs .minicursos {
   grid-area: "minicursos";
 
 }
 
-.events div .sorteios {
+.events .events__divs .sorteios {
   grid-area: "sorteios";
 }
 
-.events div img {
+.events .events__divs img {
   width: 10rem;
 }
 
@@ -284,4 +288,66 @@ footer h3 {
   font-size: 2em;
   font-weight: 900;
   line-height: 1em;
+}
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  section {
+    padding: 2rem;
+  }
+
+  header {
+    height: 20rem;
+    flex-direction: column;
+  }
+
+  header nav {
+    flex-direction: column;
+    height: 10rem;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  header nav a {
+    margin-left: 0;
+  }
+
+  .content {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20rem;
+    height: 55rem;
+  }
+
+  .content .text__box {
+    width: 100%;
+  }
+
+  .content .img__box {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .logo {
+    margin: auto auto;
+    width: 15rem;
+  }
+
+  .redes-sociais {
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    height: 6rem;
+  }
+
+  .events {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .events .events__divs {
+    width: 100%;
+  }
 }
