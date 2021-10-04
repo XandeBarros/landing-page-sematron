@@ -1,0 +1,130 @@
+/* Cards Do Slider */
+
+#as__atracoes {
+  margin-bottom: .5rem;
+}
+
+.c-palestra {
+  height: 40rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.c-palestra .card {
+  padding: .5rem;
+  background: var(--cards);
+  width: 16rem;
+  height: 20rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: .5s;
+}
+
+.c-palestra .card:hover {
+  transform: translateY(-.5rem);
+}
+
+.c-palestra .card img {
+  width: 8rem;
+  height: 8rem;
+}
+
+.c-palestra .card h3 {
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  font-weight: bold;
+  color: var(--letra);
+  
+  margin-bottom: 1rem;
+}
+
+.c-palestra .card p {
+  font-family: 'Poppins';
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--letra);
+}
+
+/* Início do Slider */
+
+.slider {
+  margin-top: 1.25rem;
+  position: relative;
+  width: 100%;
+  height: 50rem;
+  overflow: hidden;
+}
+
+.slides {
+  width: 600%; /*100% + slides * 100%*/
+  height: 100%;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: calc(100% / 6);
+  height: 100%;
+  transition: 2s;
+}
+
+/* Manual Navigation */
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  margin-top: -2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 4px solid var(--laranja);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.manual-btn:hover {
+  background: var(--laranja);
+  transform: translateY(-.25rem);
+}
+
+/* Lógica do Slider */
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: calc(-100% / 6);
+}
+
+#radio3:checked ~ .first {
+  margin-left: calc(-2*100% / 6);
+}
+
+#radio4:checked ~ .first {
+  margin-left: calc(-3*100% / 6);
+}
+
+#radio5:checked ~ .first {
+  margin-left: calc(-4*100% / 6);
+}
+
+/* Fim do Slider */
