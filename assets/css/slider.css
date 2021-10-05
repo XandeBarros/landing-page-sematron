@@ -16,12 +16,13 @@
   padding: .5rem;
   background: var(--cards);
   width: 16rem;
-  height: 20rem;
+  height: 23rem;
   border-radius: 1rem;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
 
   transition: .5s;
 }
@@ -39,6 +40,7 @@
   font-size: 1.5rem;
   font-family: 'Roboto';
   font-weight: bold;
+  text-align: center;
   color: var(--letra);
   
   margin-bottom: 1rem;
@@ -48,6 +50,8 @@
   font-family: 'Poppins';
   font-size: 1.25rem;
   font-weight: 500;
+  line-height: 1.5rem;
+  text-align: center;
   color: var(--letra);
 }
 
@@ -57,7 +61,7 @@
   margin-top: 1.25rem;
   position: relative;
   width: 100%;
-  height: 50rem;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -102,7 +106,6 @@
 
 .manual-btn:hover {
   background: var(--laranja);
-  transform: translateY(-.25rem);
 }
 
 /* Lógica do Slider */
@@ -125,6 +128,49 @@
 
 #radio5:checked ~ .first {
   margin-left: calc(-4*100% / 6);
+}
+
+/* Automatic Navigation */
+
+.navigation-automatic {
+  position: absolute;
+  width: 100%;
+  height: 1rem;
+  margin-top: calc(100vh - 2rem);
+  display: flex;
+  justify-content: center;
+}
+
+.navigation-automatic div {
+  border: 4px solid var(--laranja);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.navigation-automatic div:not(:last-child) {
+  margin-right: 3rem;
+}
+
+#radio1:checked ~ .navigation-automatic .auto-btn1 {
+  background: var(--laranja);
+}
+
+#radio2:checked ~ .navigation-automatic .auto-btn2 {
+  background: var(--laranja);
+}
+
+#radio3:checked ~ .navigation-automatic .auto-btn3 {
+  background: var(--laranja);
+}
+
+#radio4:checked ~ .navigation-automatic .auto-btn4 {
+  background: var(--laranja);
+}
+
+#radio5:checked ~ .navigation-automatic .auto-btn5 {
+  background: var(--laranja);
 }
 
 /* Fim do Slider */

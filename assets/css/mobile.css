@@ -35,7 +35,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 10rem;
-    height: 55rem;
+    height: 140vh;
   }
 
   .content .text__box {
@@ -73,7 +73,7 @@
   .slider-events-mobile {
     min-height: 0;
     width: 600%; /*100% + slides * 100%*/
-    height: 30rem;
+    height: 75vh;
     display: flex;
     justify-content: space-between;
   }
@@ -81,7 +81,6 @@
   .events .events__divs {
     width: calc(100vw - 5rem);
   }
-
 
   .circle {
     clip-path: circle(20rem at right 7.5rem);
@@ -128,8 +127,28 @@
     padding: 1.5rem;
   }
 
-  .navigation-manual {
+  .navigation-manual, .navigation-automatic {
     display: none;
+  }
+
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first {
+    margin-left: calc(-833% / 6);
+  }
+  
+  #radio3:checked ~ .first {
+    margin-left: calc(-1260% / 6);
+  }
+  
+  #radio4:checked ~ .first {
+    margin-left: calc(-1600% / 6);
+  }
+  
+  #radio5:checked ~ .first {
+    margin-left: calc(-1943% / 6);
   }
 
   footer .parceiros {

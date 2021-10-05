@@ -4,7 +4,7 @@
   --laranja: #E5A23D;
   --chocolate: #977549;
   --creme: #FFECCC;
-  --cards: #D5D1AA;
+  --cards: #dfccab;
   --verde: #005248;
   --letra: #333;
   --roxo: #9466FF;
@@ -108,6 +108,7 @@ header nav a:hover {
   font-family: 'Poppins';
   font-size: 1.25rem;
   font-weight: 500;
+  line-height: 1.5rem;
   color: var(--letra);
 
   margin-bottom: 1.5rem;
@@ -235,7 +236,7 @@ header nav a:hover {
 
 .events .events__divs {
   width: 25rem;
-  height: 32rem;
+  height: 40rem;
 
   display: flex;
   flex-direction: column;
@@ -272,6 +273,7 @@ header nav a:hover {
   font-family: 'Poppins';
   font-size: 1.25rem;
   font-weight: 500;
+  line-height: 1.5rem;
   color: var(--letra);
 }
 
@@ -281,16 +283,13 @@ header nav a:hover {
 
 .events .events__divs .dde {
   grid-area: "dde";
-
 }
 .events .events__divs .gamenight {
   grid-area: "gamenight";
-
 }
 
 .events .events__divs .minicursos {
   grid-area: "minicursos";
-
 }
 
 .events .events__divs .sorteios {
