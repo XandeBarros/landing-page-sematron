@@ -29,18 +29,18 @@ const error = () => {
 
 // Slider Automático 
 
-if (window.screen.width > 768) {
+if (window.screen.width > 992) {
   let counter = 1;
   
-  const TWENTYSECONDS = 20000;
+  const ONEMINUTE = 60 * 1000;
   
   setInterval(() => {
     document.querySelector('#radio' + counter).checked = true;
     counter++;
-    if(counter > 5) {
+    if(counter > 9) {
       counter = 1;
     }
-  }, TWENTYSECONDS);
+  }, ONEMINUTE);
 }
 
 // Send Email
