@@ -232,7 +232,7 @@ header nav a:hover {
   
   background: var(--chocolate);
 
-  clip-path: circle(35rem at right 270rem);
+  clip-path: circle(35rem at right 320rem);
 }
 
 #sematron, #atracoes, #apoio, #contato, #beneficios {
@@ -360,6 +360,7 @@ footer .patrocinios {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
 }
 
@@ -374,7 +375,7 @@ footer img {
 }
 
 .patrocinios-img {
-  width: 20rem;
+  width: 25rem;
   height: auto;
 }
 

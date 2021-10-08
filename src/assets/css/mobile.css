@@ -98,6 +98,10 @@
     padding: 1rem;
   }
 
+  .beneficios-desc div {
+    width: 100%;
+  }
+
   .circle {
     clip-path: circle(20rem at right 7.5rem);
   }
@@ -107,7 +111,7 @@
   }
 
   .circle3 {
-    clip-path: circle(18rem at right 250rem);
+    clip-path: circle(18rem at right 350rem);
   }
 
   /* Cards do Slider */
@@ -173,6 +177,7 @@
 
   footer .parceiros {
     /* flex-direction: column; */
+    gap: .5rem;
     flex-wrap: wrap;
     align-items: center;
   }
@@ -192,7 +197,12 @@
   
 
   footer .patrocinios > img {
-    width: 45%;
+    width: 70%;
+    height: auto;
+  }
+
+  footer .parceiros > img {
+    width: 25%;
     height: auto;
   }
 
