@@ -2,7 +2,7 @@
 /* Mobile */
 
 @media screen and (max-width: 768px) {
-  .btn__cta:hover, header nav a:hover, .content .img__box img:hover, .redes-sociais li a img:hover, .events .events__divs:hover, .c-palestra .card:hover, .contato-form .input-box input[type="submit"] {
+  .btn__cta:hover, header nav a:hover, .content .img__box img:hover, .redes-sociais li a img:hover, .events .events__divs:hover, .beneficios-desc div:hover, .c-palestra .card:hover, .contato-form .input-box input[type="submit"] {
     transform: translateY(0);
   }
 

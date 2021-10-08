@@ -37,7 +37,7 @@ section {
 .titulo-secoes {
   position: relative;
   text-align: center;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   margin-top: 3.5rem;
   color: var(--laranja);
   font-family: 'Poppins';
@@ -235,8 +235,8 @@ header nav a:hover {
   clip-path: circle(35rem at right 270rem);
 }
 
-#sematron {
-  margin-bottom: .75rem;
+#sematron, #atracoes, #apoio, #contato, #beneficios {
+  margin-bottom: 1rem;
 }
 
 .slider-events-mobile {
@@ -299,9 +299,44 @@ header nav a:hover {
   width: 10rem;
 }
 
+.beneficios-desc {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beneficios-desc div {
+  width: 50%;
+
+  background: var(--cards);
+  padding: 2rem;
+  border-radius: 1rem;
+  transition: .5s;
+}
+
+.beneficios-desc div:hover {
+  transform: translateY(-.5rem);
+}
+
+.beneficios-desc p {
+  font-family: 'Poppins';
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--letra);
+}
+
+.beneficios-desc p span {
+  color: var(--laranja);
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
 footer {
   position: relative;
   display: inline-block;
+  width: 100%;
 }
 
 footer h4 {
@@ -318,12 +353,14 @@ footer .parceiros {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 footer .patrocinios {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 
 footer img {
@@ -331,15 +368,20 @@ footer img {
   height: auto;
 }
 
-footer .patrocinios > img {
-  width: 20%;
+.parceiros-img {
+  width: 10rem;
+  height: auto;
+}
+
+.patrocinios-img {
+  width: 20rem;
   height: auto;
 }
 
 .contato {
   position: relative;
   min-height: 50vh;
-  padding: 3rem 6rem;
+  padding: 0 1.5rem 3rem 1.5rem;
 
   display: flex;
   align-items: center;
@@ -411,6 +453,11 @@ footer .patrocinios > img {
   flex-direction: column;
   margin-left: 3rem;
   justify-content: center;
+}
+
+.icon {
+  height: 4rem;
+  width: 4rem;
 }
 
 .img-icon {
