@@ -7,7 +7,7 @@ module.exports = {
   mode: 'development',
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, 'public/'),
+    path: path.resolve(__dirname, 'public/landing-page/'),
     filename: 'bundle.js',
     assetModuleFilename: 'assets/images/[hash][ext][query]'
   },
